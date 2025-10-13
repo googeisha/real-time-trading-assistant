@@ -8,29 +8,33 @@ This project contains an enhanced version of the Robinhood-style trading assista
 ### Core Files:
 - `robinhood_market_researcher.py` - Contains the MarketAnalyzer class and all trading logic
 - `robinhood_ui_dark.py` - **MAIN FILE** - Dark-themed UI with all features (charts, boxes, blue accents)
-- `robinhood_ui.py` - Basic UI (original version)
-- `robinhood_ui_visual.py` - UI with visual enhancements
-- `robinhood_ui_final.py` - UI with all features but light theme
 - `advanced_robinhood_assistant.py` - Advanced version with more features
-- `robinhood_assistant_single.py` - Original assistant (has known issues)
+
+### Application Launch:
+- `main.py` - **RECOMMENDED** - Main entry point (launches the best-working dark UI)
+- `start_app.bat` - **RECOMMENDED** - Double-click to launch the application
+
+### Alternative Launch:
+- `run_dark_ui.bat` - Direct launch of dark-themed UI
 
 ### Database:
 - `watchlist.db` - SQLite database storing your watchlist
 
-### Run Scripts:
-- `run_dark_ui.bat` - **RECOMMENDED** - Run this for the best experience (dark theme with all features)
-
 ## How to Run
 
 ### Recommended (Best Experience):
+Double-click `start_app.bat` or run:
+```
+python main.py
+```
+
+This will launch the dark-themed UI which is the most stable version.
+
+### Alternative:
 Double-click `run_dark_ui.bat` or run:
 ```
 python robinhood_ui_dark.py
 ```
-
-### Other Options:
-- For regular UI with all features: `python robinhood_ui_final.py`
-- For basic functionality: `python robinhood_ui.py`
 
 ## Features
 
